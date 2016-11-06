@@ -26,14 +26,16 @@ public class Welcome extends AppCompatActivity implements TextToSpeech.OnInitLis
         tts.setLanguage(Locale.UK);
         tts.setSpeechRate(0.7f);
 
-        /*speakOut("Lantern");
-        speakOut("Enlightning your lives");*/
+        speakOut("Lantern");
+        //speakOut("Enlightning your lives");*/
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startService(new Intent(getBaseContext(),ChatHeadService.class));
+                Intent serviceIntent = new Intent(getBaseContext(), ChatHeadService.class);
+                startService(serviceIntent);
                 speakOut("Lets get started");
+                startActivity(new Intent(Welcome.this,recog.class));
             }
         });
     }
