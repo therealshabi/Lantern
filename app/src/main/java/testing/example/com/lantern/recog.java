@@ -55,7 +55,7 @@ public class recog extends AppCompatActivity
 
         //String API_URL ="https://www.googleapis.com/youtube/v3/search?part=snippet&q="+x+"&type=video&fields=items(id%2FvideoId%2Csnippet(description%2Cthumbnails%2Fdefault%2Furl%2Ctitle))&maxResults=6&key=AIzaSyBUazLEbfOV-_Zla5bA8GbH4dgDi3fOJ2Y";
 
-        final String API_URL="https://api.clarifai.com/v1/tag/?access_token=hTKjUZAoZtv4yeHlDUeTzcPYZmMTwy&url=https://samples.clarifai.com/metronorth.jpg";
+        final String API_URL="https://api.clarifai.com/v1/tag/?access_token=hTKjUZAoZtv4yeHlDUeTzcPYZmMTwy&url=https://samples.clarifai.com/metro-north.jpg";
         final  String API_URL_2="https://api.clarifai.com/v1/tag/?access_token=hTKjUZAoZtv4yeHlDUeTzcPYZmMTwy&url=https://samples.clarifai.com/travel.jpg\n";
 
         button1.setOnClickListener(new View.OnClickListener() {
