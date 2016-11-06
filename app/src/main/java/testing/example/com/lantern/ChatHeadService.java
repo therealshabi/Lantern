@@ -159,8 +159,7 @@ public class ChatHeadService extends Service implements GestureOverlayView.OnGes
             String result = predictions.get(0).name;
             if ("dialer".equalsIgnoreCase(result)) {
                 speakOut("Dialer Opened");
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent intent = new Intent(this,MainActivity.class);
                 if (intent != null) {
                     startActivity(intent);
                 }
