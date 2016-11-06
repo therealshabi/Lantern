@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/navigation_drawer_about"
+            android:title="About"/>
+        <item
+            android:id="@+id/app_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="helper"
+            />
+    </group>
+
+</menu>
+
